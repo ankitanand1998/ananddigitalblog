@@ -1,0 +1,131 @@
+<div class="main">
+    <div class="container">
+      <!-- BLOG SECTION -->
+      <div class="blog">
+        <h2 class="h2">Latest Blog Post</h2>
+  
+        <div class="blog-card-group">
+          <!-- Loop through fetched blog data and populate each blog card -->
+          <!-- Placeholder format used for demonstration -->
+          {{#each blogs}}
+          <div class="blog-card">
+            <div class="blog-card-banner">
+              <img src="{{this.bannerImage}}" alt="{{this.title}}" width="250" class="blog-banner-img" />
+            </div>
+  
+            <div class="blog-content-wrapper">
+              <button class="blog-topic text-tiny">{{this.category}}</button>
+  
+              <h3>
+                <a href="{{this.link}}" class="h3">
+                  {{this.title}}
+                </a>
+              </h3>
+  
+              <p class="blog-text">
+                {{this.description}}
+              </p>
+  
+              <div class="wrapper-flex">
+                <div class="profile-wrapper">
+                  <img src="{{this.authorImage}}" alt="{{this.author}}" width="50" />
+                </div>
+  
+                <div class="wrapper">
+                  <a href="#" class="h4">{{this.author}}</a>
+  
+                  <p class="text-sm">
+                    <time datetime="{{this.publishDateISO}}">{{this.publishDate}}</time>
+                    <span class="separator"></span>
+                    <ion-icon name="time-outline"></ion-icon>
+                    <time datetime="PT{{this.readingTime}}M">{{this.readingTime}} min</time>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          {{/each}}
+        </div>
+  
+        <button class="btn load-more">Load More</button>
+      </div>
+  
+      <!-- ASIDE -->
+      <div class="aside">
+        <div class="topics">
+          <h2 class="h2">Categories</h2>
+          <!-- Loop through category data -->
+          {{#each categories}}
+          <a href="{{this.link}}" class="topic-btn">
+            <div class="icon-box">
+              <ion-icon name="{{this.icon}}"></ion-icon>
+            </div>
+            <p>{{this.name}}</p>
+          </a>
+          {{/each}}
+        </div>
+  
+        <div class="tags">
+          <h2 class="h2">Tags</h2>
+          <div class="wrapper">
+            <!-- Loop through tag data -->
+            {{#each tags}}
+            <button class="hashtag">{{this}}</button>
+            {{/each}}
+          </div>
+        </div>
+  
+        <div class="contact">
+          <h2 class="h2">Let's Talk</h2>
+          <div class="wrapper">
+            <p>Do you want to learn more about how I can help your company overcome problems? Let us have a conversation.</p>
+  
+            <ul class="social-link">
+              <!-- Loop through social links -->
+              {{#each socialLinks}}
+              <li>
+                <a href="{{this.link}}" class="icon-box {{this.platform}}">
+                  <ion-icon name="logo-{{this.platform}}"></ion-icon>
+                </a>
+              </li>
+              {{/each}}
+            </ul>
+          </div>
+        </div>
+  
+        <div class="newsletter">
+          <h2 class="h2">Newsletter</h2>
+          <div class="wrapper">
+            <p>Subscribe to our newsletter to be among the first to keep up with the latest updates.</p>
+            <form action="#">
+              <input type="email" name="email" placeholder="Email Address" required />
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+  function doGet() {
+    const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Sheet1'); // Replace 'Sheet1' with your sheet name
+    const data = sheet.getDataRange().getValues();
+    
+    const headers = data[0]; // Assume first row contains column headers
+    const rows = data.slice(1); // Skip the header row
+  
+    // Convert rows to an array of objects
+    const jsonData = rows.map(row => {
+      let rowData = {};
+      row.forEach((cell, i) => {
+        rowData[headers[i]] = cell;
+      });
+      return rowData;
+    });
+  
+    return ContentService.createTextOutput(JSON.stringify(jsonData))
+      .setMimeType(ContentService.MimeType.JSON);
+  }
+  
