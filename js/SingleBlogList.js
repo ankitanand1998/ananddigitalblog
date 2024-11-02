@@ -51,11 +51,9 @@ async function fetchBlogData() {
 
 // Function to redirect to singlepost.html with filename as part of the URL
 function redirectToSinglePost(filename) {
-    // Construct the SEO-friendly URL by removing the `.html` and `blogs/` parts
-    const seoFriendlyUrl = filename.replace('/blogs/', '').replace('.html', '');
-    window.location.href = `https://ananddigitalblog.vercel.app/blogs/${seoFriendlyUrl}`;
-  }
-  
+  // Redirect to singlepost.html with the filename as a query parameter
+  window.location.href = `singlepost.html?filename=${encodeURIComponent(filename)}`;
+}
 
 // Call the function to fetch and display blog data
 fetchBlogData();
