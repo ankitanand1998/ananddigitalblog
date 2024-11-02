@@ -18,6 +18,8 @@ function getQueryParam(param) {
 // Load the specific blog content
 async function loadBlogContent() {
   const filename = getQueryParam('filename'); // Get the filename parameter
+console.log( filename);
+
 
   if (!filename) {
     console.error("No filename provided in the URL.");
