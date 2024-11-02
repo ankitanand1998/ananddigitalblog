@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+       
     <meta charset="UTF-8">
        
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -40,8 +40,8 @@
                 document.getElementById('blogContentContainer').innerHTML = content; // Display the content in a container
 
                 // Update the URL in the browser to an SEO-friendly version
-                const seoFriendlyUrl = filename.replace('/blogs/', '/blogs/').replace('.html', '');
-                window.history.pushState({}, '', seoFriendlyUrl); // Change the URL in the address bar without reloading
+                const seoFriendlyUrl = filename.replace('.html', ''); // Remove .html extension
+                window.history.replaceState({}, '', seoFriendlyUrl); // Change the URL in the address bar without reloading
             } catch (error) {
                 console.error("Error loading blog content:", error);
             }
