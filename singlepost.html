@@ -2,18 +2,14 @@
 <html lang="en">
 
 <head>
-       
     <meta charset="UTF-8">
-       
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>singlepost</title>
+    <title>singlepost</title>
 </head>
 
 <body>
-        <h1>Single Blog</h1>
-        <div id="blogContentContainer">Loading content...</div>
+    <h1>Single Blog</h1>
 
-       
     <script>
         // Function to get URL parameters
         function getQueryParam(param) {
@@ -24,7 +20,8 @@
         // Load the specific blog content
         async function loadBlogContent() {
             const filename = getQueryParam('filename'); // Get the filename parameter
-            console.log("filename: " + filename);
+            console.log("filename" + filename);
+
 
             if (!filename) {
                 console.error("No filename provided in the URL.");
@@ -38,10 +35,6 @@
                 }
                 const content = await response.text(); // Get the content as text
                 document.getElementById('blogContentContainer').innerHTML = content; // Display the content in a container
-
-                // Update the URL in the browser to an SEO-friendly version
-                const seoFriendlyUrl = filename.replace('.html', ''); // Remove .html extension
-                window.history.replaceState({}, '', seoFriendlyUrl); // Change the URL in the address bar without reloading
             } catch (error) {
                 console.error("Error loading blog content:", error);
             }
