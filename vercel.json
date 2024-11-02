@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/blogs/:category/:slug",
+        "destination": "/singlepost.html?filename=/blogs/:category/:slug.html"
+      }
+    ]
+  }
