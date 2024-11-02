@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>singlepost</title>
+</head>
+<body>
+   <h1>Single Blog</h1>
+
+    <script>
+        // Function to get URL parameters
+function getQueryParam(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Load the specific blog content
+async function loadBlogContent() {
+  const filename = getQueryParam('filename'); // Get the filename parameter
+
+  if (!filename) {
+    console.error("No filename provided in the URL.");
+    return;
+  }
+
+  try {
+    const response = await fetch(filename); // Fetch the blog post content using the filename
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.statusText}`);
+    }
+    const content = await response.text(); // Get the content as text
+    document.getElementById('blogContentContainer').innerHTML = content; // Display the content in a container
+  } catch (error) {
+    console.error("Error loading blog content:", error);
+  }
+}
+
+// Call the function to load the content when the page loads
+loadBlogContent();
+
+    </script>
+</body>
+</html>
