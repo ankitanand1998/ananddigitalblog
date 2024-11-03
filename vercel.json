@@ -5,7 +5,8 @@
       "has": [
         { "type": "query", "key": "filename", "value": "governor-ravi-delivers-no-balls-seeman-chucks" }
       ],
-      "destination": "/governor-ravi-delivers-no-balls-seeman-chucks.html"
+      "destination": "/governor-ravi-delivers-no-balls-seeman-chucks.html",
+      "permanent": true
     }
   ]
 }
