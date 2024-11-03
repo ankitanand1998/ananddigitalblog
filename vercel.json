@@ -1,8 +1,11 @@
 {
   "rewrites": [
     {
-      "source": "https://ananddigitalblog.vercel.app/singlepost.html?filename=governor-ravi-delivers-no-balls-seeman-chucks.html:match(.*)",
-      "destination": "https://ananddigitalblog.vercel.app/governor-ravi-delivers-no-balls-seeman-chucks.html:match"
+      "source": "/singlepost.html",
+      "has": [
+        { "type": "query", "key": "filename", "value": "governor-ravi-delivers-no-balls-seeman-chucks" }
+      ],
+      "destination": "/governor-ravi-delivers-no-balls-seeman-chucks.html"
     }
   ]
 }
