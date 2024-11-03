@@ -574,6 +574,12 @@ footer .wrapper { text-align: center; }
   }
 
 
+  .logo-light,
+.logo-dark{
+  max-width: 210px;
+}
+
+
   /**
    * BLOG 
    */
@@ -617,6 +623,11 @@ footer .wrapper { text-align: center; }
     --fs-1: 2.25rem;
 
   }
+
+  .logo-light,
+.logo-dark{
+  max-width: 210px;
+}
 
 
 
