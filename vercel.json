@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/governor-ravi-delivers-no-balls-seeman-chucks.html",
-      "destination": "/singlepost.html?filename=governor-ravi-delivers-no-balls-seeman-chucks.html",
+      "source": "/:filename.html",
+      "destination": "/singlepost.html?filename=:filename.html",
       "permanent": true
     }
   ]
