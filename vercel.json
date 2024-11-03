@@ -1,8 +1,8 @@
 {
-    "rewrites": [
-      {
-        "source": "/blogs/:category/:slug",
-        "destination": "/singlepost.html?filename=/blogs/:category/:slug.html"
-      }
-    ]
-  }
+  "rewrites": [
+    {
+      "source": "/singlepost/:filename",
+      "destination": "/singlepost.html?filename=:filename"
+    }
+  ]
+}
