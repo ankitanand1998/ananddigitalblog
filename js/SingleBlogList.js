@@ -41,6 +41,8 @@ async function fetchBlogData() {
         </div>
       `;
 
+      document.getElementById('loadingMessage').style.display = 'none';
+    document.getElementById('blogListContainer').style.display = 'block';
       // Append the blog card to the container
       blogCardsContainer.appendChild(blogCard);
     });
