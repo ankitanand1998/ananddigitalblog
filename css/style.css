@@ -574,9 +574,9 @@ footer .wrapper { text-align: center; }
   }
 
 
-  .logo-light,
-.logo-dark{
-  max-width: 210px !important;
+  .light-theme .logo-light, .dark-theme .logo-dark {
+    display: block;
+    width: 200px;
 }
 
 
@@ -624,11 +624,10 @@ footer .wrapper { text-align: center; }
 
   }
 
-  .logo-light,
-.logo-dark{
-  max-width: 210px !important;
+  .light-theme .logo-light, .dark-theme .logo-dark {
+    display: block;
+    width: 200px;
 }
-
 
 
   /**
