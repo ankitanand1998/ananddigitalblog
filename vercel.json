@@ -1,8 +1,8 @@
 {
   "rewrites": [
     {
-      "source": "singlepost.html?filename=",
-      "destination": ""
+      "source": "singlepost.html?filename=:match(.*)",
+      "destination": "https://ananddigitalblog.vercel.app/governor-ravi-delivers-no-balls-seeman-chucks.html:match"
     }
   ]
 }
