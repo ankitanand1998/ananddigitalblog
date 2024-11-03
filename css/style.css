@@ -574,10 +574,7 @@ footer .wrapper { text-align: center; }
   }
 
 
-  .light-theme .logo-light, .dark-theme .logo-dark {
-    display: block;
-    width: 200px;
-}
+ 
 
 
   /**
@@ -612,7 +609,8 @@ footer .wrapper { text-align: center; }
  * responsive for larger than 650px screen
  */
 
- @media (min-width: 375px) {
+ @media (min-width: 320px) and (max-width: 481px) {
+
   .light-theme .logo-light, .dark-theme .logo-dark {
     display: block;
     width: 200px;
@@ -633,10 +631,7 @@ footer .wrapper { text-align: center; }
 
   }
 
-  .light-theme .logo-light, .dark-theme .logo-dark {
-    display: block;
-    width: 200px;
-}
+
 
 
   /**
