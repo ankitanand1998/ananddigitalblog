@@ -576,7 +576,7 @@ footer .wrapper { text-align: center; }
 
   .logo-light,
 .logo-dark{
-  max-width: 210px;
+  max-width: 210px !important;
 }
 
 
@@ -626,7 +626,7 @@ footer .wrapper { text-align: center; }
 
   .logo-light,
 .logo-dark{
-  max-width: 210px;
+  max-width: 210px !important;
 }
 
 
