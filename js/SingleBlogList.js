@@ -54,6 +54,5 @@ function redirectToSinglePost(filename) {
   // Redirect to singlepost.html with the filename as a query parameter
   window.location.href = `singlepost.html?filename=${encodeURIComponent(filename)}`;
 }
-
 // Call the function to fetch and display blog data
 fetchBlogData();
