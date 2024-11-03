@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "singlepost.html?filename=:match(.*)",
+      "source": "https://ananddigitalblog.vercel.app/singlepost.html?filename=governor-ravi-delivers-no-balls-seeman-chucks.html:match(.*)",
       "destination": "https://ananddigitalblog.vercel.app/governor-ravi-delivers-no-balls-seeman-chucks.html:match"
     }
   ]
