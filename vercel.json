@@ -2,7 +2,7 @@
   "redirects": [
     {
       "source": "/:filename.html",
-      "destination": "/singlepost.html?filename=:filename.html",
+      "destination": "/singlepost.html?filename=:filename",
       "permanent": true
     }
   ]
