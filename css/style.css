@@ -612,6 +612,15 @@ footer .wrapper { text-align: center; }
  * responsive for larger than 650px screen
  */
 
+ @media (min-width: 375px) {
+  .light-theme .logo-light, .dark-theme .logo-dark {
+    display: block;
+    width: 200px;
+}
+
+ }
+
+
 @media (min-width: 650px) {
 
   :root {
