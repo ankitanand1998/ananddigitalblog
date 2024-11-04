@@ -35,7 +35,7 @@ async function fetchSpecificBlogPost() {
             document.getElementById('banner_image').src = specificPost.bannerImg;
             document.getElementById('paragraph2').textContent = specificPost.paragraph2;
             document.getElementById('authername').textContent = specificPost.author;
-            document.getElementById('meta-title').content = specificPost.metaTitle;
+            document.title = specificPost.metaTitle;
             document.getElementById('meta-keywords').content = specificPost.keywords;
             document.getElementById('meta-description').content = specificPost.metaDescription;
             document.getElementById('canonical-url').href = specificPost.canonicalUrl;
