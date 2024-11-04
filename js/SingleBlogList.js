@@ -21,7 +21,7 @@ async function fetchBlogData() {
         <div class="blog-content-wrapper">
           <button class="blog-topic text-tiny">${item.category}</button>
           <h3>
-            <a href="#" class="h3" onclick="redirectToSinglePost('${item.filename}')">${item.heading}</a>
+            <a href="'${item.filename}'" class="h3" onclick="redirectToSinglePost('${item.filename}')">${item.heading}</a>
           </h3>
           <p class="blog-text">${item.description}</p>
           <div class="wrapper-flex">
