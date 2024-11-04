@@ -1,4 +1,1 @@
-RewriteEngine On
 
-RewriteCond %{QUERY_STRING} (^|&)filename=governor-ravi-delivers-no-balls-seeman-chucks.html(&|$)
-RewriteRule ^singlepost\.html$ /governor-ravi-delivers-no-balls-seeman-chucks.html? [L,R=301]
