@@ -1,1 +1,29 @@
+{
+  "redirects": [
+    {
+      "source": "/singlepost.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "filename",
+          "value": "governor-ravi-delivers-no-balls-seeman-chucks.html"
+        }
+      ],
+      "destination": "/governor-ravi-delivers-no-balls-seeman-chucks",
+      "permanent": true
+    },
+    {
+      "source": "/singlepost.html",
+      "has": [
+        {
+          "type": "query",
+          "key": "filename",
+          "value": "maharashtra-candidates-exit-maharashtra-poll-contest-in-latur.html"
+        }
+      ],
+      "destination": "/maharashtra-candidates-exit-maharashtra-poll-contest-in-latur",
+      "permanent": true
+    }
+  ]
+}
 
