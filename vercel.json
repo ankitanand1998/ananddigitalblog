@@ -1,17 +1,1 @@
 
-{
-  "redirects": [
-    {
-      "source": "/singlepost.html",
-      "has": [
-        {
-          "type": "query",
-          "key": "filename",
-          "value": "maharashtra-candidates-exit-maharashtra-poll-contest-in-latur.html"
-        }
-      ],
-      "destination": "/maharashtra-candidates-exit-maharashtra-poll-contest-in-latur",
-      "permanent": true
-    }
-  ]
-}
