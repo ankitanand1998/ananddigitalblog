@@ -10,19 +10,20 @@
 <url>
   <loc>https://ananddigitalblog.vercel.app/</loc>
   <lastmod>2024-11-03T12:41:14+00:00</lastmod>
+   <priority>0.8</priority>
+</url>
+
+<url>
+  <loc>https://ananddigitalblog.vercel.app/governor-ravi-delivers-no-balls-seeman-chucks</loc>
+  <lastmod>2024-12-22</lastmod>
+  <priority>0.8</priority>
 </url>
 
 
 <url>
-  <loc>https://ananddigitalblog.vercel.app/singlepost.html?filename=governor-ravi-delivers-no-balls-seeman-chucks.html</loc>
+  <loc>https://ananddigitalblog.vercel.app/maharashtra-candidates-exit-maharashtra-poll-contest-in-latur</loc>
   <lastmod>2024-11-03T12:47:15+00:00</lastmod>
+    <priority>0.8</priority>
 </url>
-
-<url>
-        <lastmod>2024-11-03T12:41:14+00:00</lastmod>
-  <loc>https://ananddigitalblog.vercel.app/singlepost.html?filename=maharashtra-candidates-exit-maharashtra-poll-contest-in-latur.html</loc>
-</url>
-
-      
 
 </urlset>
